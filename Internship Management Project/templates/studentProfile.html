@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="/static/studentProfile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Student Profile</h1>
+    <div class="profile-info">
+      <div class="info-item">
+        <strong>Email:</strong> <span id="email"></span>
+      </div>
+      <div class="info-item">
+        <strong>Name:</strong> <span id="name"></span>
+      </div>
+      <div class="info-item">
+        <strong>Enrollment:</strong> <span id="enrollment"></span>
+      </div>
+      <div class="info-item">
+        <strong>Semester:</strong> <span id="sem"></span>
+      </div>
+      <div class="info-item">
+        <strong>Age:</strong> <span id="age"></span>
+      </div>
+      <div class="info-item">
+        <strong>Gender:</strong> <span id="gender"></span>
+      </div>
+      <div class="info-item">
+        <strong>College:</strong> <span id="college"></span>
+      </div>
+    </div>
+    <button onclick="dash()">Back to dashboard</button>
+  </div>
+  <script src="/static/studentProfile.js "></script>
+  <script>
+    const dash =()=> {
+        window.location.href="student.html";
+    }
+  </script>
+</body>
+</html>

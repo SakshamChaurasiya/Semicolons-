@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Internship Work</title>
+  <link rel="stylesheet" href="/static/submit.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Internship Work</h1>
+    <form id="submissionForm">
+      <div class="form-group">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+      </div>
+      <div class="form-group">
+        <label for="enrollmentNo">Enrollment Number:</label>
+        <input type="text" id="enrollmentNo" name="enrollmentNo" required>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+      </div>
+      <div class="form-group">
+        <label for="submissionDate">Date:</label>
+        <input type="date" id="submissionDate" name="submissionDate" required>
+      </div>
+      <div class="form-group">
+        <label for="workFile">Upload Work File:</label>
+        <input type="file" id="workFile" name="workFile" required>
+      </div>
+      <button type="submit" onclick="dash()">Submit Work</button>
+    </form>
+    <button onclick="dash()">Dashboard
+    </button>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="/static/submit.js"></script>
+  <script>
+    const dash=()=>{
+        window.location.href = "student.html";
+    }
+  </script>
+</body>
+</html>

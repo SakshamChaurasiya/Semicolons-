@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor Profile</title>
+  <link rel="stylesheet" href="/static/studentMentor.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h1>Mentor Profile</h1>
+    <div class="profile-info">
+      <div class="info-item">
+        <strong>Name:</strong> <span id="name"></span>
+      </div>
+      <div class="info-item">
+        <strong>Mentor ID:</strong> <span id="mentorId"></span>
+      </div>
+      <div class="info-item">
+        <strong>Department:</strong> <span id="department"></span>
+      </div>
+      <div class="info-item">
+        <strong>Age:</strong> <span id="age"></span>
+      </div>
+      <div class="info-item">
+        <strong>Email:</strong> <span id="email"></span>
+      </div>
+      <div class="info-item">
+        <strong>Gender:</strong> <span id="gender"></span>
+      </div>
+    </div>
+    <button onclick="goToDashboard()">Back to Dashboard</button>
+  </div>
+  <script src="/static/studentMentor.js"></script>
+  <script>
+    const goToDashboard = () => {
+      window.location.href = "student.html"; // Change this to your actual dashboard file
+    };
+  </script>
+</body>
+</html>
