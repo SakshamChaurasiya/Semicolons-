@@ -33,27 +33,62 @@ h1 {
     box-shadow: 0 10px 20px rgba(46, 208, 14, 0.2);
 }
 
-/* Logout button styling */
+/* Button styles */
+.btn {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Background color for cards */
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+/* General button styles */
 button {
-    background-color: #dc3545; /* Red background for logout */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #dc3545; /* Red for logout */
     color: white;
-    font-size: 1rem;
-    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
-    width: 100%; /* Make it span the full width */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px; /* Space from the previous items */
+    transition: background-color 0.3s, transform 0.3s;
 }
 
+/* Hover effect */
 button:hover {
-    background-color: #c82333; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: #c82333;
+    transform: scale(1.05);
 }
 
+/* Focus effect */
 button:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Slight shadow when focused */
+    box-shadow: 0 0 5px 2px rgba(220, 53, 69, 0.5);
 }
 
+/* Active effect */
+button:active {
+    background-color: #bd2130;
+    transform: scale(0.98);
+}
