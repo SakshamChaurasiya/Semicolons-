@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Container styling */
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2rem;
+    color: #343a40;
+  }
+  
+  /* Form elements styling */
+  .form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+ /* Style for Dashboard button */
+button {
+    background-color: #007bff; /* Blue background for primary action */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Space above the button */
+    width: 100%; /* Full width for better visibility */
+    max-width: 200px; /* Restrict max width */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Focus effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}
+/* Style for Dashboard button */
+button {
+    background-color: #007bff; /* Blue background for primary action */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Space above the button */
+    width: 100%; /* Full width for better visibility */
+    max-width: 200px; /* Restrict max width */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Focus effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}
+
+  
+  /* Responsive design for mobile screens */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  

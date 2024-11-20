@@ -1,0 +1,59 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #0e0909;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Card styles */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(46, 208, 14, 0.2);
+}
+
+/* Logout button styling */
+button {
+    background-color: #dc3545; /* Red background for logout */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make it span the full width */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px; /* Space from the previous items */
+}
+
+button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Slight shadow when focused */
+}
+
