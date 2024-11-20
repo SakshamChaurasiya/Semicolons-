@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Assignment Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/assignTask.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Task Assignment Form</h1>
+
+    <form id="taskForm">
+      <div class="mb-3">
+        <label for="studentName" class="form-label">Student Name</label>
+        <input type="text" class="form-control" id="studentName" placeholder="Enter Student Name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Student Email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="enrollmentNo" class="form-label">Enrollment No</label>
+        <input type="text" class="form-control" id="enrollmentNo" placeholder="Enter Enrollment Number" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="taskDeadline" class="form-label">Task Deadline</label>
+        <input type="date" class="form-control" id="taskDeadline" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="mentorName" class="form-label">Mentor Name</label>
+        <input type="text" class="form-control" id="mentorName" placeholder="Enter Mentor Name" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary" onclick="dash()">Assign Task</button>
+    </form>
+    <button onclick="list()">Show list</button>
+  </div>
+
+  <script src="taskAssignment.js"></script>
+  <script>
+    // Handle form submission
+    document.getElementById('taskForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Task Assigned Successfully!');
+      // You can add further logic to save the form data (e.g., to a database or API)
+      this.reset(); // Reset the form after submission
+    });
+  </script>
+  <script>
+    const list=()=>{
+        window.location.href="mentorStudent.html";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/adminNotice.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Send a Message</h1>
+
+    <!-- Message Form -->
+    <form id="messageForm">
+      <div class="mb-3">
+        <label for="senderName" class="form-label">Sender's Name</label>
+        <input type="text" class="form-control" id="senderName" placeholder="Enter your name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" class="form-control" id="date" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" onclick="dash()">Send Message</button>
+    </form>
+    <button onclick="dash()">Dashboard</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    const dash=()=>{
+        window.location.href="Administrator.html";
+    }
+  </script>
+</body>
+</html>

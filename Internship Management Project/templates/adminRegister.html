@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/static/mentorRegister.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register Admin</h1>
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+             
+            <div class="inputBox">
+                <label for="email">Email:</label>
+                <input type="email" id="emailid" placeholder="Your Email....." />
+            </div>
+            <div class="inputBox">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+            <div class="inputBox">
+                <label for="sem">Age:</label>
+                <input type="number" id="age" placeholder="Your Age...." />
+            </div>
+            <div class="inputBox">
+                <label for="age">Gender:</label>
+                <input type="text" id="Gender" placeholder="Male/Female" />
+            </div>
+            <div class="inputBox">
+                <label for="gender">college:</label>
+                <input type="text" id="collage" placeholder="Institution Name" />
+            </div>
+            <div class="inputBox">
+                <label for="college">Department:</label>
+                <input type="text" id="Department" placeholder="Department/Branch" />
+            </div>
+
+
+
+           
+
+            <div class="inputBox">
+                <button type="submit" onclick="signIn()">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/static/mentorRegister.js"></script>
+    <script>
+        const signIn = ()=>{
+            window.location.href ="signInadmin.html";
+        }
+    </script>
+</body>
+
+</html>

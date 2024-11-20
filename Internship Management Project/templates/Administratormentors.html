@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/Aministratormentor.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Mentors List</h1>
+
+    <!-- Student List -->
+    <div class="list-group mb-4">
+      <a href="#" class="list-group-item list-group-item-action">
+        <strong>sam dick</strong> - <span>Enrollment ID: 5468</span>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <strong>john wick</strong> - <span>Enrollment ID: 64890</span>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <strong>Ron Brown</strong> - <span>Enrollment ID: 16723</span>
+      </a>
+      <!-- Add more students as needed -->
+    </div>
+
+   
+
+    <!-- Dashboard Button with custom styling -->
+    <div class="text-center mt-3">
+      <button class="btn btn-dashboard" onclick="dash()">Dashboard</button>
+    </div>
+  </div>
+
+  <script src="studentList.js"></script>
+  <script>
+    const dash = () => {
+        window.location.href="Administrator.html";
+    }
+  </script>
+</body>
+</html>

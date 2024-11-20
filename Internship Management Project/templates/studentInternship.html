@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Details</title>
+  <link rel="stylesheet" href="/static/studentInternship.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Internship Details</h1>
+    <div class="internship-info">
+      <div class="info-item">
+        <strong>Company Name:</strong> <span id="companyName"></span>
+      </div>
+      <div class="info-item">
+        <strong>Company Address:</strong> <span id="companyAddress"></span>
+      </div>
+      <div class="info-item">
+        <strong>External Mentor Name:</strong> <span id="externalMentor"></span>
+      </div>
+      <div class="info-item">
+        <strong>City:</strong> <span id="city"></span>
+      </div>
+      <div class="info-item">
+        <strong>Starting Date:</strong> <span id="startDate"></span>
+      </div>
+      <div class="info-item">
+        <strong>Ending Date:</strong> <span id="endDate"></span>
+      </div>
+      <div class="info-item">
+        <strong>Stipend:</strong> <span id="stipend"></span>
+      </div>
+    </div>
+    <button onclick="submissionForm()">Submission Form</button>
+  </div>
+  <script src="/static/studentInternship.js"></script>
+  <script>
+    const submissionForm=()=>{
+        window.location.href = "submit.html";
+    }
+  </script>
+</body>
+</html>
